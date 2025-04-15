@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvbqx3dr8mg35"]
+
+[ext_resource type="Texture2D" uid="uid://8xr3xpgi2psb" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/City_men_3/Idle.png" id="1_5suvo"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Idle" type="Sprite2D" parent="."]
+position = Vector2(492, 397)
+texture = ExtResource("1_5suvo")
