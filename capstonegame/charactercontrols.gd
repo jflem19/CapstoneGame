@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+var running = false 
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
@@ -22,6 +22,16 @@ func _physics_process(delta: float) -> void:
 			$AnimatedSprite2D.flip_h = true
 		else:
 			$AnimatedSprite2D.flip_h = false
-		$AnimatedSprite2D.play("walk")
+		if not running:
+			$AnimatedSprite2D.play("walk")
+	else: 
+		$AnimatedSprite2D.play("idle")
 	velocity.x = direction * SPEED 
 	move_and_slide()
+
+	if Input.is_action_just_pressed("sprint"):
+		$AnimatedSprite2D.play("run")
+		running = true
+	if Input.is_action_just_released("sprint"): 
+		running = false
+	
