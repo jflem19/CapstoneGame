@@ -1,8 +1,8 @@
-[gd_scene load_steps=37 format=3 uid="uid://cvbqx3dr8mg35"]
+[gd_scene load_steps=38 format=3 uid="uid://cvbqx3dr8mg35"]
 
 [ext_resource type="Texture2D" uid="uid://8xr3xpgi2psb" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/City_men_3/Idle.png" id="1_5suvo"]
-[ext_resource type="Script" path="res://Charactermoves.gd" id="1_6xmj2"]
 [ext_resource type="Texture2D" uid="uid://cpmjca2sdatep" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/City_men_3/Attack.png" id="1_err1y"]
+[ext_resource type="Script" path="res://charactercontrols.gd" id="1_lk7nq"]
 [ext_resource type="Texture2D" uid="uid://ckrrbjyk5ino7" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/City_men_3/Run.png" id="3_b0ubt"]
 [ext_resource type="Texture2D" uid="uid://dmylpmbtta3u" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/City_men_3/Walk.png" id="4_tndft"]
 
@@ -239,10 +239,17 @@ animations = [{
 "speed": 15.0
 }]
 
-[node name="character" type="Node2D"]
-script = ExtResource("1_6xmj2")
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hlff0"]
+height = 76.0
+
+[node name="character" type="CharacterBody2D"]
+script = ExtResource("1_lk7nq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_mbg0l")
 animation = &"walk"
 frame_progress = 0.817635
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 29)
+shape = SubResource("CapsuleShape2D_hlff0")
