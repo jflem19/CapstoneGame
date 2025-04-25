@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cau63msubd5y4"
-path="res://.godot/imported/Background_1.png-fa6f940a538d87c56dfaf9e047913745.ctex"
+uid="uid://foxutcig5rw8"
+path="res://.godot/imported/Assets.png-5c5daed599340f32427bed7d0ef51948.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Background_1.png"
-dest_files=["res://.godot/imported/Background_1.png-fa6f940a538d87c56dfaf9e047913745.ctex"]
+source_file="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/Assets.png"
+dest_files=["res://.godot/imported/Assets.png-5c5daed599340f32427bed7d0ef51948.ctex"]
 
 [params]
 
