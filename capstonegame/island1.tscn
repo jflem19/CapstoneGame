@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=4 uid="uid://bywkm5twxnj6f"]
 
 [ext_resource type="Script" path="res://island_1spawner.gd" id="1_nuqk7"]
-[ext_resource type="Texture2D" uid="uid://cbggcfkdlx0h3" path="res://Assets.png" id="2_7ecmp"]
+[ext_resource type="Texture2D" uid="uid://foxutcig5rw8" path="res://Assets.png" id="2_7ecmp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_38yg7"]
 texture = ExtResource("2_7ecmp")
