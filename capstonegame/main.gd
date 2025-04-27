@@ -10,7 +10,7 @@ func _ready():
 
 # Called every frame
 func _process(_delta):
-	if $"../Camera2D".position.x > previous_building_position + building_distance:
+	if $"../Camera2D2".position.x > previous_building_position + building_distance:
 		var new_building = buildings.pick_random().instantiate()
 		new_building.position.x = previous_building_position + building_distance
 		new_building.position.x += randi_range(-100, 100)
