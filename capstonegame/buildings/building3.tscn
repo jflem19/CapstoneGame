@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://u6fhi05i4qmx"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c502c"]
+load_path = "res://.godot/imported/Skyscraper_Buildings _pack_OldNinjaCat_v1.png-e774fb9d7914f14410a45f7d01dcafe6.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ul66"]
+size = Vector2(57, 242)
+
+[node name="Building1" type="Node2D"]
+
+[node name="SkyscraperBuildingsPackOldNinjaCatV1" type="Sprite2D" parent="."]
+texture = SubResource("CompressedTexture2D_c502c")
+region_enabled = true
+region_rect = Rect2(181.917, 417.753, 72.6303, 244.417)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_7ul66")
