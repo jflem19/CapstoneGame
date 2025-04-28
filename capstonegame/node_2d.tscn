@@ -1,26 +1,47 @@
-[gd_scene load_steps=38 format=3 uid="uid://cvbqx3dr8mg35"]
+[gd_scene load_steps=44 format=3 uid="uid://cvbqx3dr8mg35"]
 
 [ext_resource type="Texture2D" uid="uid://8xr3xpgi2psb" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/City_men_3/Idle.png" id="1_5suvo"]
 [ext_resource type="Texture2D" uid="uid://cpmjca2sdatep" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/City_men_3/Attack.png" id="1_err1y"]
 [ext_resource type="Script" path="res://charactercontrols.gd" id="1_lk7nq"]
+[ext_resource type="Texture2D" uid="uid://b1s86y72cdc80" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/City_men_3/Dead.png" id="3_1sqlb"]
 [ext_resource type="Texture2D" uid="uid://ckrrbjyk5ino7" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/City_men_3/Run.png" id="3_b0ubt"]
 [ext_resource type="Texture2D" uid="uid://dmylpmbtta3u" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/City_men_3/Walk.png" id="4_tndft"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_3752f"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_bcchg"]
 atlas = ExtResource("1_err1y")
 region = Rect2(0, 0, 128, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ha13f"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ydqfb"]
 atlas = ExtResource("1_err1y")
 region = Rect2(128, 0, 128, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bw7ib"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4i8x"]
 atlas = ExtResource("1_err1y")
 region = Rect2(256, 0, 128, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_irvpv"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_vg4qp"]
 atlas = ExtResource("1_err1y")
 region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b2i0v"]
+atlas = ExtResource("3_1sqlb")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4cmn5"]
+atlas = ExtResource("3_1sqlb")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_llbuq"]
+atlas = ExtResource("3_1sqlb")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gveux"]
+atlas = ExtResource("3_1sqlb")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjoe6"]
+atlas = ExtResource("3_1sqlb")
+region = Rect2(512, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vjgaa"]
 atlas = ExtResource("1_5suvo")
@@ -130,20 +151,43 @@ region = Rect2(1152, 0, 128, 128)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_3752f")
+"texture": SubResource("AtlasTexture_bcchg")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ha13f")
+"texture": SubResource("AtlasTexture_ydqfb")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_bw7ib")
+"texture": SubResource("AtlasTexture_x4i8x")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_irvpv")
+"texture": SubResource("AtlasTexture_vg4qp")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_1sqlb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b2i0v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4cmn5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_llbuq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gveux")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wjoe6")
 }],
 "loop": true,
-"name": &"attack",
-"speed": 10.0
+"name": &"die",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -166,7 +210,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 6.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -234,7 +278,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_kgkjx")
 }],
-"loop": true,
+"loop": false,
 "name": &"walk",
 "speed": 15.0
 }]
@@ -248,8 +292,7 @@ script = ExtResource("1_lk7nq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_mbg0l")
-animation = &"walk"
-frame_progress = 0.817635
+animation = &"die"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 31)
