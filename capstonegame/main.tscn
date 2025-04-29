@@ -1,13 +1,18 @@
-[gd_scene load_steps=17 format=4 uid="uid://dujrkp6yg7myo"]
-
+[gd_scene load_steps=24 format=4 uid="uid://dujrkp6yg7myo"]
 
 [ext_resource type="Texture2D" uid="uid://iaiqfx8olm7x" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/Background_2.png" id="1_7fr8w"]
 [ext_resource type="Script" path="res://main.gd" id="1_mjv6d"]
 [ext_resource type="Texture2D" uid="uid://cau63msubd5y4" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/Background_1.png" id="2_fkxt7"]
+[ext_resource type="PackedScene" uid="uid://be0mpvd518d76" path="res://buildings/building1.tscn" id="2_thdgh"]
+[ext_resource type="PackedScene" uid="uid://ydn4d6r75uan" path="res://buildings/building2.tscn" id="3_10486"]
 [ext_resource type="Texture2D" uid="uid://foxutcig5rw8" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/Assets.png" id="3_af5bf"]
+[ext_resource type="PackedScene" uid="uid://u6fhi05i4qmx" path="res://buildings/building3.tscn" id="4_5wbx0"]
 [ext_resource type="Texture2D" uid="uid://cd27v542pjovw" path="res://Skyscraper_Buildings _pack_OldNinjaCat_v1.png" id="4_qy1iv"]
+[ext_resource type="PackedScene" uid="uid://cmlwyiu6xshmh" path="res://buildings/building4.tscn" id="5_m4p02"]
+[ext_resource type="PackedScene" uid="uid://cj304f60006mk" path="res://buildings/building5.tscn" id="6_3hykj"]
 [ext_resource type="PackedScene" uid="uid://cvbqx3dr8mg35" path="res://node_2d.tscn" id="6_xymgg"]
-
+[ext_resource type="PackedScene" uid="uid://k4vjqeosmjhd" path="res://platform.tscn" id="7_6d8g7"]
+[ext_resource type="PackedScene" uid="uid://dyndifecwifti" path="res://buildings/building6.tscn" id="7_umx05"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kvbmn"]
 texture = ExtResource("1_7fr8w")
@@ -7029,6 +7034,7 @@ sources/0 = SubResource("TileSetAtlasSource_w85jv")
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_mjv6d")
+buildings = Array[PackedScene]([ExtResource("2_thdgh"), ExtResource("3_10486"), ExtResource("4_5wbx0"), ExtResource("5_m4p02"), ExtResource("5_m4p02"), ExtResource("6_3hykj"), ExtResource("7_umx05")])
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -7064,3 +7070,17 @@ tile_set = SubResource("TileSet_py0bb")
 position = Vector2(35, 588)
 
 [node name="Camera2D2" type="Camera2D" parent="character"]
+
+[node name="platforms" type="Node2D" parent="."]
+position = Vector2(43, 664)
+
+[node name="platform" parent="platforms" instance=ExtResource("7_6d8g7")]
+
+[node name="platform2" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(131, -64)
+
+[node name="platform3" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(284, -51)
+
+[node name="platform4" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(419, -87)
