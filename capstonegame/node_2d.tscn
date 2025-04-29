@@ -302,4 +302,4 @@ shape = SubResource("CapsuleShape2D_hlff0")
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Node2D" parent="." instance=ExtResource("7_4skfq")]
-position = Vector2(16, -88)
+position = Vector2(22, 38)
