@@ -1,17 +1,13 @@
 [gd_scene load_steps=17 format=4 uid="uid://dujrkp6yg7myo"]
 
-<<<<<<< HEAD
-[ext_resource type="Texture2D" uid="uid://iaiqfx8olm7x" path="res://Background_2.png" id="1_7fr8w"]
-[ext_resource type="Texture2D" uid="uid://cau63msubd5y4" path="res://Background_1.png" id="2_fkxt7"]
-[ext_resource type="Texture2D" uid="uid://foxutcig5rw8" path="res://Assets.png" id="3_af5bf"]
-=======
+
 [ext_resource type="Texture2D" uid="uid://iaiqfx8olm7x" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/Background_2.png" id="1_7fr8w"]
 [ext_resource type="Script" path="res://main.gd" id="1_mjv6d"]
 [ext_resource type="Texture2D" uid="uid://cau63msubd5y4" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/Background_1.png" id="2_fkxt7"]
 [ext_resource type="Texture2D" uid="uid://foxutcig5rw8" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/Assets.png" id="3_af5bf"]
 [ext_resource type="Texture2D" uid="uid://cd27v542pjovw" path="res://Skyscraper_Buildings _pack_OldNinjaCat_v1.png" id="4_qy1iv"]
 [ext_resource type="PackedScene" uid="uid://cvbqx3dr8mg35" path="res://node_2d.tscn" id="6_xymgg"]
->>>>>>> 452b95570d7e065a5eb0f07f2fd0a73ebd4f1070
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kvbmn"]
 texture = ExtResource("1_7fr8w")
