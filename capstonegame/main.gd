@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var buildings : Array[PackedScene]
-@export var building_distance = 500
+@export var building_distance = 50 
 var previous_building_position = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -10,7 +10,7 @@ func _ready():
 
 # Called every frame
 func _process(_delta):
-	if $"character.position".position.x > previous_building_position + building_distance:
+	if $character.position.x > previous_building_position + building_distance:
 		var new_building = buildings.pick_random().instantiate()
 		new_building.position.x = previous_building_position + building_distance
 		new_building.position.x += randi_range(-100, 100)
