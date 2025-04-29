@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://dujrkp6yg7myo"]
+[gd_scene load_steps=25 format=4 uid="uid://dujrkp6yg7myo"]
 
 [ext_resource type="Texture2D" uid="uid://iaiqfx8olm7x" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/Background_2.png" id="1_7fr8w"]
 [ext_resource type="Script" path="res://main.gd" id="1_mjv6d"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cvbqx3dr8mg35" path="res://node_2d.tscn" id="6_xymgg"]
 [ext_resource type="PackedScene" uid="uid://k4vjqeosmjhd" path="res://platform.tscn" id="7_6d8g7"]
 [ext_resource type="PackedScene" uid="uid://dyndifecwifti" path="res://buildings/building6.tscn" id="7_umx05"]
+[ext_resource type="PackedScene" uid="uid://bfmvb7eaq4jfs" path="res://outlineplatform.tscn" id="14_d013m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kvbmn"]
 texture = ExtResource("1_7fr8w")
@@ -7084,3 +7085,34 @@ position = Vector2(284, -51)
 
 [node name="platform4" parent="platforms" instance=ExtResource("7_6d8g7")]
 position = Vector2(419, -87)
+
+[node name="outlineplatform" parent="." instance=ExtResource("14_d013m")]
+position = Vector2(290, 722)
+
+[node name="outlineplatform2" parent="." instance=ExtResource("14_d013m")]
+position = Vector2(890, 722)
+
+[node name="outlineplatform3" parent="." instance=ExtResource("14_d013m")]
+position = Vector2(1491, 722)
+
+[node name="outlineplatform4" parent="." instance=ExtResource("14_d013m")]
+position = Vector2(2092, 722)
+
+[node name="outlineplatform5" parent="." instance=ExtResource("14_d013m")]
+position = Vector2(2690, 722)
+
+[node name="outlineplatform6" parent="." instance=ExtResource("14_d013m")]
+position = Vector2(-11, 450)
+rotation = 4.71239
+
+[node name="outlineplatform7" parent="." instance=ExtResource("14_d013m")]
+position = Vector2(-11, 287)
+rotation = 4.71239
+
+[node name="outlineplatform8" parent="." instance=ExtResource("14_d013m")]
+position = Vector2(2938, 449)
+rotation = 4.71239
+
+[node name="outlineplatform9" parent="." instance=ExtResource("14_d013m")]
+position = Vector2(2938, 253)
+rotation = 4.71239

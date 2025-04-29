@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfmvb7eaq4jfs"]
+
+[ext_resource type="Texture2D" uid="uid://cd27v542pjovw" path="res://Skyscraper_Buildings _pack_OldNinjaCat_v1.png" id="1_ydu0d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ydki5"]
+size = Vector2(607, 20)
+
+[node name="outlineplatform" type="StaticBody2D"]
+position = Vector2(43, 664)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_ydki5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ydu0d")
+region_enabled = true
+region_rect = Rect2(100.372, 956.721, 600.187, 14.9546)
