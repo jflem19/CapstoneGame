@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://cvbqx3dr8mg35"]
+[gd_scene load_steps=44 format=3 uid="uid://cvbqx3dr8mg35"]
 
 [ext_resource type="Texture2D" uid="uid://8xr3xpgi2psb" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/City_men_3/Idle.png" id="1_5suvo"]
 [ext_resource type="Texture2D" uid="uid://cpmjca2sdatep" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/City_men_3/Attack.png" id="1_err1y"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://b1s86y72cdc80" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/City_men_3/Dead.png" id="3_1sqlb"]
 [ext_resource type="Texture2D" uid="uid://ckrrbjyk5ino7" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/City_men_3/Run.png" id="3_b0ubt"]
 [ext_resource type="Texture2D" uid="uid://dmylpmbtta3u" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/City_men_3/Walk.png" id="4_tndft"]
-[ext_resource type="PackedScene" uid="uid://d1bu1cbpg182p" path="res://dogscene.tscn" id="7_4skfq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bcchg"]
 atlas = ExtResource("1_err1y")
@@ -299,7 +298,6 @@ animation = &"die"
 position = Vector2(-1, 31)
 shape = SubResource("CapsuleShape2D_hlff0")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 
-[node name="Node2D" parent="." instance=ExtResource("7_4skfq")]
-position = Vector2(22, 38)
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
