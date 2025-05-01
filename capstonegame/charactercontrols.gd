@@ -4,7 +4,7 @@ extends CharacterBody2D
 
 
 var running = false 
-const SPEED = 300.0
+const SPEED = 500.0
 const JUMP_VELOCITY = -400.0
 
 
