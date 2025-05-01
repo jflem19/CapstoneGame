@@ -4,7 +4,7 @@ extends CharacterBody2D
 
 
 var running = false 
-const SPEED = 500.0
+const SPEED = 600.0
 const JUMP_VELOCITY = -400.0
 
 
@@ -14,7 +14,7 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 
 	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("p1_jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.
@@ -41,7 +41,3 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("attack"):
 		$AnimatedSprite2D.play("attack")	
 	
-
-
-func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
-	pass # Replace with function body.
