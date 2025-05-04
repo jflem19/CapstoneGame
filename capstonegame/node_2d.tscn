@@ -287,7 +287,7 @@ animations = [{
 radius = 20.0
 height = 72.0
 
-[node name="character" type="CharacterBody2D"]
+[node name="character" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_lk7nq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -297,7 +297,3 @@ animation = &"die"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 31)
 shape = SubResource("CapsuleShape2D_hlff0")
-
-[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-
-[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
