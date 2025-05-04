@@ -1,6 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8mqi6s3p6lov"]
+[gd_scene load_steps=6 format=3 uid="uid://c8mqi6s3p6lov"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_ech0k"]
+[ext_resource type="Texture2D" uid="uid://cki3lsc3df0fh" path="res://Screen Shot 2025-05-04 at 5.46.38 PM.png" id="2_mwywg"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_no18u"]
+texture = ExtResource("2_mwywg")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sewia"]
 bg_color = Color(0.859209, 0.371714, 0.850799, 1)
@@ -15,6 +19,9 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
+[sub_resource type="SystemFont" id="SystemFont_d4bdw"]
+font_names = PackedStringArray("Kailasa")
+
 [node name="Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -24,23 +31,79 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ech0k")
 
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0.314316, 0.314316, 0.314316, 1)
+layout_mode = 0
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 1150.0
+offset_bottom = 645.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_no18u")
+
 [node name="Play" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.883
+anchor_right = 0.501
+anchor_bottom = 0.883
+offset_left = -83.0
+offset_top = -43.184
+offset_right = 83.848
+offset_bottom = 42.816
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxFlat_sewia")
+text = "Play"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 361.0
+offset_top = 146.0
+offset_right = 800.0
+offset_bottom = 231.0
+color = Color(0, 0.266667, 0.392157, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -84.0
-offset_top = -43.0
-offset_right = 84.0
-offset_bottom = 43.0
+offset_left = -208.5
+offset_top = -31.5
+offset_right = 207.5
+offset_bottom = 46.5
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 4
-size_flags_vertical = 6
-theme_override_font_sizes/font_size = 30
-theme_override_styles/focus = SubResource("StyleBoxFlat_sewia")
-text = "Play"
+theme_override_colors/font_outline_color = Color(0.332267, 0.905303, 0.724244, 1)
+theme_override_fonts/font = SubResource("SystemFont_d4bdw")
+theme_override_font_sizes/font_size = 60
+text = "The Rat Chase"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.59
+anchor_right = 0.5
+anchor_bottom = 0.59
+offset_left = -198.0
+offset_top = -63.32
+offset_right = 198.0
+offset_bottom = 63.68
+grow_horizontal = 2
+grow_vertical = 2
+text = "Instructions:
+One player per character (person or rat) 
+Rat controls: Arrows
+Person controls: AWSD
+Try to capture the rat or run away from the person!"
+horizontal_alignment = 1
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
