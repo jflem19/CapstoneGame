@@ -5,7 +5,7 @@ extends CharacterBody2D
 
 var running = false 
 const SPEED = 600.0
-const JUMP_VELOCITY = -400.0
+const JUMP_VELOCITY = -600.0
 
 func _ready() -> void:
 	position = Vector2(50,600)

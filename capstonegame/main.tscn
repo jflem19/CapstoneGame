@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://k4vjqeosmjhd" path="res://platform.tscn" id="7_6d8g7"]
 [ext_resource type="PackedScene" uid="uid://dyndifecwifti" path="res://buildings/building6.tscn" id="7_umx05"]
 [ext_resource type="PackedScene" uid="uid://bfmvb7eaq4jfs" path="res://outlineplatform.tscn" id="14_d013m"]
-[ext_resource type="PackedScene" uid="uid://d1bu1cbpg182p" path="res://dogscene.tscn" id="15_qc1m8"]
+[ext_resource type="PackedScene" uid="uid://d1bu1cbpg182p" path="res://ratescene.tscn" id="15_qc1m8"]
 [ext_resource type="PackedScene" uid="uid://vjkbr6s4jmjg" path="res://game_over.tscn" id="16_o2dlw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kvbmn"]
@@ -7070,21 +7070,94 @@ tile_map_data = PackedByteArray("AAD//ysAAAAGADoAAAD//ywAAAAGADsAAAD//y0AAAAGADw
 tile_set = SubResource("TileSet_py0bb")
 
 [node name="character" parent="." instance=ExtResource("6_xymgg")]
-position = Vector2(35, 588)
+position = Vector2(95, 172)
 
 [node name="platforms" type="Node2D" parent="."]
 position = Vector2(43, 664)
 
 [node name="platform" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(52, -411)
 
 [node name="platform2" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(131, -64)
+position = Vector2(51, -549)
 
 [node name="platform3" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(284, -51)
+position = Vector2(198, -371)
 
 [node name="platform4" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(419, -87)
+position = Vector2(202, -534)
+
+[node name="platform5" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(284, -228)
+
+[node name="platform6" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(491, -325)
+
+[node name="platform7" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(648, -485)
+
+[node name="platform8" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(125, -76)
+
+[node name="platform9" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(588, -105)
+
+[node name="platform10" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(782, -233)
+
+[node name="platform11" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(989, -362)
+
+[node name="platform12" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(1055, -167)
+
+[node name="platform13" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(1260, -301)
+
+[node name="platform14" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(1469, -481)
+
+[node name="platform15" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(1516, -140)
+
+[node name="platform16" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(1788, -83)
+
+[node name="platform17" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(1709, -315)
+
+[node name="platform18" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(1999, -279)
+
+[node name="platform19" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(2103, -81)
+
+[node name="platform20" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(2293, -159)
+
+[node name="platform21" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(2418, -312)
+
+[node name="platform22" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(2507, -63)
+
+[node name="platform23" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(2649, -162)
+
+[node name="platform24" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(2809, -58)
+
+[node name="platform25" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(2778, -330)
+
+[node name="platform26" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(1940, -38)
+
+[node name="platform27" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(1278, -68)
+
+[node name="platform28" parent="platforms" instance=ExtResource("7_6d8g7")]
+position = Vector2(864, -35)
 
 [node name="outlineplatform" parent="." instance=ExtResource("14_d013m")]
 position = Vector2(290, 722)
@@ -7101,6 +7174,18 @@ position = Vector2(2092, 722)
 [node name="outlineplatform5" parent="." instance=ExtResource("14_d013m")]
 position = Vector2(2690, 722)
 
+[node name="outlineplatform8" parent="." instance=ExtResource("14_d013m")]
+position = Vector2(3228, 723)
+
+[node name="outlineplatform9" parent="." instance=ExtResource("14_d013m")]
+position = Vector2(3833, 723)
+
+[node name="outlineplatform10" parent="." instance=ExtResource("14_d013m")]
+position = Vector2(4433, 722)
+
+[node name="outlineplatform11" parent="." instance=ExtResource("14_d013m")]
+position = Vector2(5038, 722)
+
 [node name="outlineplatform6" parent="." instance=ExtResource("14_d013m")]
 position = Vector2(-11, 450)
 rotation = 4.71239
@@ -7109,16 +7194,8 @@ rotation = 4.71239
 position = Vector2(-11, 287)
 rotation = 4.71239
 
-[node name="outlineplatform8" parent="." instance=ExtResource("14_d013m")]
-position = Vector2(2938, 449)
-rotation = 4.71239
-
-[node name="outlineplatform9" parent="." instance=ExtResource("14_d013m")]
-position = Vector2(2938, 253)
-rotation = 4.71239
-
 [node name="Node2D" parent="." instance=ExtResource("15_qc1m8")]
-position = Vector2(22, 38)
+position = Vector2(45, 84)
 
 [node name="GameOver" parent="." instance=ExtResource("16_o2dlw")]
 visible = false
