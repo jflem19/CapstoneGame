@@ -7198,4 +7198,4 @@ rotation = 4.71239
 visible = false
 
 [node name="rat" parent="." instance=ExtResource("13_vcoxr")]
-position = Vector2(328, 391)
+position = Vector2(-19, 686)
