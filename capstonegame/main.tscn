@@ -7083,17 +7083,8 @@ shape = SubResource("RectangleShape2D_veprj")
 [node name="platforms" type="Node2D" parent="."]
 position = Vector2(43, 664)
 
-[node name="platform" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(52, -411)
-
-[node name="platform2" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(51, -549)
-
 [node name="platform3" parent="platforms" instance=ExtResource("7_6d8g7")]
 position = Vector2(198, -371)
-
-[node name="platform4" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(202, -534)
 
 [node name="platform5" parent="platforms" instance=ExtResource("7_6d8g7")]
 position = Vector2(284, -228)
