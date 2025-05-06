@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://dujrkp6yg7myo"]
+[gd_scene load_steps=27 format=4 uid="uid://dujrkp6yg7myo"]
 
 [ext_resource type="Texture2D" uid="uid://iaiqfx8olm7x" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/Background_2.png" id="1_7fr8w"]
 [ext_resource type="Script" path="res://main.gd" id="1_mjv6d"]
@@ -7034,6 +7034,9 @@ texture = ExtResource("4_qy1iv")
 [sub_resource type="TileSet" id="TileSet_py0bb"]
 sources/0 = SubResource("TileSetAtlasSource_w85jv")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_veprj"]
+size = Vector2(2926, 85)
+
 [node name="Main" type="Node2D"]
 script = ExtResource("1_mjv6d")
 buildings = Array[PackedScene]([ExtResource("2_thdgh"), ExtResource("3_10486"), ExtResource("4_5wbx0"), ExtResource("5_m4p02"), ExtResource("5_m4p02"), ExtResource("6_3hykj"), ExtResource("7_umx05")])
@@ -7070,6 +7073,12 @@ tile_set = SubResource("TileSet_py0bb")
 
 [node name="character" parent="." instance=ExtResource("6_xymgg")]
 position = Vector2(95, 172)
+
+[node name="RespawnZone" type="Area2D" parent="character"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="character/RespawnZone"]
+position = Vector2(1391, 664)
+shape = SubResource("RectangleShape2D_veprj")
 
 [node name="platforms" type="Node2D" parent="."]
 position = Vector2(43, 664)
@@ -7192,19 +7201,6 @@ rotation = 4.71239
 [node name="outlineplatform7" parent="." instance=ExtResource("14_d013m")]
 position = Vector2(-11, 287)
 rotation = 4.71239
-
-[node name="Node2D" parent="."]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-position = Vector2(45, 84)
-script = null
 
 [node name="GameOver" parent="." instance=ExtResource("16_o2dlw")]
 visible = false
