@@ -26,3 +26,7 @@ func _process2(_delta):
 		new_building.position.y += randi_range(650, 650)
 		add_child(new_building)
 		previous_building_position = new_building.position.x
+
+
+func _on_respawn_zone_body_shape_entered(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
+	pass # Replace with function body.

@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://dujrkp6yg7myo"]
+[gd_scene load_steps=26 format=4 uid="uid://dujrkp6yg7myo"]
 
 [ext_resource type="Texture2D" uid="uid://iaiqfx8olm7x" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/Background_2.png" id="1_7fr8w"]
 [ext_resource type="Script" path="res://main.gd" id="1_mjv6d"]
@@ -14,7 +14,6 @@
 [ext_resource type="PackedScene" uid="uid://k4vjqeosmjhd" path="res://platform.tscn" id="7_6d8g7"]
 [ext_resource type="PackedScene" uid="uid://dyndifecwifti" path="res://buildings/building6.tscn" id="7_umx05"]
 [ext_resource type="PackedScene" uid="uid://bfmvb7eaq4jfs" path="res://outlineplatform.tscn" id="14_d013m"]
-[ext_resource type="PackedScene" uid="uid://d1bu1cbpg182p" path="res://ratescene.tscn" id="15_qc1m8"]
 [ext_resource type="PackedScene" uid="uid://vjkbr6s4jmjg" path="res://game_over.tscn" id="16_o2dlw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kvbmn"]
@@ -7194,8 +7193,18 @@ rotation = 4.71239
 position = Vector2(-11, 287)
 rotation = 4.71239
 
-[node name="Node2D" parent="." instance=ExtResource("15_qc1m8")]
+[node name="Node2D" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(45, 84)
+script = null
 
 [node name="GameOver" parent="." instance=ExtResource("16_o2dlw")]
 visible = false
