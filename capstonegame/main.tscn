@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://dujrkp6yg7myo"]
+[gd_scene load_steps=28 format=4 uid="uid://dujrkp6yg7myo"]
 
 [ext_resource type="Texture2D" uid="uid://iaiqfx8olm7x" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/Background_2.png" id="1_7fr8w"]
 [ext_resource type="Script" path="res://main.gd" id="1_mjv6d"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cvbqx3dr8mg35" path="res://node_2d.tscn" id="6_xymgg"]
 [ext_resource type="PackedScene" uid="uid://k4vjqeosmjhd" path="res://platform.tscn" id="7_6d8g7"]
 [ext_resource type="PackedScene" uid="uid://dyndifecwifti" path="res://buildings/building6.tscn" id="7_umx05"]
+[ext_resource type="PackedScene" uid="uid://d1bu1cbpg182p" path="res://ratescene.tscn" id="13_vcoxr"]
 [ext_resource type="PackedScene" uid="uid://bfmvb7eaq4jfs" path="res://outlineplatform.tscn" id="14_d013m"]
 [ext_resource type="PackedScene" uid="uid://vjkbr6s4jmjg" path="res://game_over.tscn" id="16_o2dlw"]
 
@@ -7204,3 +7205,6 @@ rotation = 4.71239
 
 [node name="GameOver" parent="." instance=ExtResource("16_o2dlw")]
 visible = false
+
+[node name="rat" parent="." instance=ExtResource("13_vcoxr")]
+position = Vector2(328, 391)
