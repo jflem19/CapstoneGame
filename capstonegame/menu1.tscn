@@ -3,3 +3,11 @@
 [ext_resource type="PackedScene" uid="uid://c8mqi6s3p6lov" path="res://menu.tscn" id="1_j0lh6"]
 
 [node name="Menu" instance=ExtResource("1_j0lh6")]
+
+[node name="Label" parent="." index="3"]
+text = "Instructions:
+One player per character (person or rat) 
+Rat controls: Arrows
+Person controls: AWSD
+Try to capture the rat or run away from the person!
+Beware of the spawning buildings! They may get in your way!!"
