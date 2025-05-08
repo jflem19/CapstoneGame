@@ -10,7 +10,7 @@ func _ready():
 
 # Called every frame
 func _process(_delta):
-	if $character.position.x > previous_building_position + building_distance:
+	if $rat.position.x > previous_building_position + building_distance:
 		var new_building = buildings.pick_random().instantiate()
 		new_building.position.x = previous_building_position + building_distance
 		new_building.position.x += randi_range(-0, 400)
@@ -19,14 +19,10 @@ func _process(_delta):
 		previous_building_position = new_building.position.x
 		
 func _process2(_delta):
-	if  "res://ratescene.tscn"> previous_building_position + building_distance:
+	if  $character.position.x > previous_building_position + building_distance:
 		var new_building = buildings.pick_random().instantiate()
 		new_building.position.x = previous_building_position + building_distance
 		new_building.position.x += randi_range(-0, 400)
 		new_building.position.y += randi_range(650, 650)
 		add_child(new_building)
 		previous_building_position = new_building.position.x
-
-
-func _on_respawn_zone_body_shape_entered(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
-	get_tree().reload_current_scene()

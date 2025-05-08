@@ -1,12 +1,22 @@
 
+
+
+
 [gd_scene load_steps=21 format=4 uid="uid://dujrkp6yg7myo"]
 [ext_resource type="Texture2D" uid="uid://iaiqfx8olm7x" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/Background_2.png" id="1_7fr8w"]
+[ext_resource type="Script" path="res://main.gd" id="1_se2rb"]
+[ext_resource type="PackedScene" uid="uid://be0mpvd518d76" path="res://buildings/building1.tscn" id="2_ccc7k"]
 [ext_resource type="Texture2D" uid="uid://cau63msubd5y4" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/Background_1.png" id="2_fkxt7"]
 [ext_resource type="Texture2D" uid="uid://foxutcig5rw8" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/Assets.png" id="3_af5bf"]
+[ext_resource type="PackedScene" uid="uid://ydn4d6r75uan" path="res://buildings/building2.tscn" id="3_hnqpb"]
+[ext_resource type="PackedScene" uid="uid://u6fhi05i4qmx" path="res://buildings/building3.tscn" id="4_766em"]
 [ext_resource type="Texture2D" uid="uid://cd27v542pjovw" path="res://Skyscraper_Buildings _pack_OldNinjaCat_v1.png" id="4_qy1iv"]
-[ext_resource type="PackedScene" uid="uid://cvbqx3dr8mg35" path="res://node_2d.tscn" id="6_xymgg"]
+[ext_resource type="PackedScene" uid="uid://cmlwyiu6xshmh" path="res://buildings/building4.tscn" id="5_4rk63"]
+[ext_resource type="PackedScene" uid="uid://cj304f60006mk" path="res://buildings/building5.tscn" id="6_nmenc"]
+[ext_resource type="PackedScene" uid="uid://cvbqx3dr8mg35" path="res://character.tscn" id="6_xymgg"]
 [ext_resource type="PackedScene" uid="uid://k4vjqeosmjhd" path="res://platform.tscn" id="7_6d8g7"]
-[ext_resource type="PackedScene" uid="uid://d1bu1cbpg182p" path="res://ratescene.tscn" id="13_vcoxr"]
+[ext_resource type="PackedScene" uid="uid://dyndifecwifti" path="res://buildings/building6.tscn" id="7_us34n"]
+[ext_resource type="PackedScene" uid="uid://d1bu1cbpg182p" path="res://ratscene.tscn" id="13_vcoxr"]
 [ext_resource type="PackedScene" uid="uid://bfmvb7eaq4jfs" path="res://outlineplatform.tscn" id="14_d013m"]
 [ext_resource type="PackedScene" uid="uid://vjkbr6s4jmjg" path="res://game_over.tscn" id="16_o2dlw"]
 
@@ -7029,6 +7039,8 @@ texture = ExtResource("4_qy1iv")
 sources/0 = SubResource("TileSetAtlasSource_w85jv")
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_se2rb")
+buildings = Array[PackedScene]([ExtResource("2_ccc7k"), ExtResource("3_hnqpb"), ExtResource("4_766em"), ExtResource("5_4rk63"), ExtResource("6_nmenc"), ExtResource("7_us34n")])
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -7061,7 +7073,9 @@ tile_map_data = PackedByteArray("AAD//ysAAAAGADoAAAD//ywAAAAGADsAAAD//y0AAAAGADw
 tile_set = SubResource("TileSet_py0bb")
 
 [node name="character" parent="." instance=ExtResource("6_xymgg")]
-position = Vector2(352, 298)
+
+position = Vector2(89, 634)
+
 
 [node name="platforms" type="Node2D" parent="."]
 position = Vector2(43, 664)
@@ -7180,4 +7194,6 @@ rotation = 4.71239
 visible = false
 
 [node name="rat" parent="." instance=ExtResource("13_vcoxr")]
+
 position = Vector2(482, 562)
+

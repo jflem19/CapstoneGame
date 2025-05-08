@@ -113,7 +113,7 @@ scale = Vector2(1.25, 1.46875)
 shape = SubResource("RectangleShape2D_51xcv")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(580, -281)
+position = Vector2(434, -284)
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(0, 4)
