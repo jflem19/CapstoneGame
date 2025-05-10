@@ -2,10 +2,10 @@ extends CharacterBody2D
 var alive = true
 
 const SPEED = 250.0
-const JUMP_VELOCITY = -600.0
+const JUMP_VELOCITY = -800.0
 
 func _ready() -> void:
-	position = Vector2(300,600)
+	position = Vector2(850,300)
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
