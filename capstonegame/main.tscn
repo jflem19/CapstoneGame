@@ -7112,4 +7112,8 @@ position = Vector2(709, 626)
 [node name="character" parent="." instance=ExtResource("6_xymgg")]
 position = Vector2(157, 443)
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Cameratarget" type="Marker2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="Cameratarget"]
+position = Vector2(558, 365)
+position_smoothing_enabled = true
