@@ -19,10 +19,14 @@ func _process(_delta):
 		previous_building_position = new_building.position.x
 		
 func _process2(_delta):
-	if  $character.position.x > previous_building_position + building_distance:
+	if  $character> previous_building_position + building_distance:
 		var new_building = buildings.pick_random().instantiate()
 		new_building.position.x = previous_building_position + building_distance
 		new_building.position.x += randi_range(-0, 400)
 		new_building.position.y += randi_range(650, 650)
 		add_child(new_building)
 		previous_building_position = new_building.position.x
+		
+@onready var player1 = $rat
+@onready var player2 = $character
+@onready var camera = $Camera2D

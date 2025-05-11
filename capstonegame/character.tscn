@@ -297,5 +297,3 @@ animation = &"die"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 31)
 shape = SubResource("CapsuleShape2D_hlff0")
-
-[node name="Camera2D" type="Camera2D" parent="."]
