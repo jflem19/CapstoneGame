@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://dujrkp6yg7myo"]
+[gd_scene load_steps=26 format=4 uid="uid://dujrkp6yg7myo"]
 
 [ext_resource type="Texture2D" uid="uid://iaiqfx8olm7x" path="res://craftpix-net-516149-city-man-pixel-art-character-sprite-sheets/Background_2.png" id="1_7fr8w"]
 [ext_resource type="Script" path="res://main.gd" id="1_se2rb"]
@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://cmlwyiu6xshmh" path="res://buildings/building4.tscn" id="5_4rk63"]
 [ext_resource type="PackedScene" uid="uid://cj304f60006mk" path="res://buildings/building5.tscn" id="6_nmenc"]
 [ext_resource type="PackedScene" uid="uid://cvbqx3dr8mg35" path="res://character.tscn" id="6_xymgg"]
-[ext_resource type="PackedScene" uid="uid://k4vjqeosmjhd" path="res://platform.tscn" id="7_6d8g7"]
 [ext_resource type="PackedScene" uid="uid://dyndifecwifti" path="res://buildings/building6.tscn" id="7_us34n"]
 [ext_resource type="PackedScene" uid="uid://d1bu1cbpg182p" path="res://ratscene.tscn" id="13_vcoxr"]
 [ext_resource type="PackedScene" uid="uid://bfmvb7eaq4jfs" path="res://outlineplatform.tscn" id="14_d013m"]
@@ -7068,85 +7067,6 @@ motion_mirroring = Vector2(1440, 0)
 [node name="smallbldblue" type="TileMapLayer" parent="ParallaxBackground/ParallaxLayer4"]
 tile_map_data = PackedByteArray("AAD//ysAAAAGADoAAAD//ywAAAAGADsAAAD//y0AAAAGADwAAAAAACsAAAAHADoAAAAAACwAAAAHADsAAAAAAC0AAAAHADwAAAABACsAAAAIADoAAAABACwAAAAIADsAAAABAC0AAAAIADwAAAACACsAAAAJADoAAAACACwAAAAJADsAAAACAC0AAAAJADwAAAADACsAAAAKADoAAAADACwAAAAKADsAAAADAC0AAAAKADwAAAAEACsAAAALADoAAAAEACwAAAALADsAAAAEAC0AAAALADwAAAAFACsAAAAMADoAAAAFACwAAAAMADsAAAAFAC0AAAAMADwAAAAGACsAAAANADoAAAAGACwAAAANADsAAAAGAC0AAAANADwAAAAHACsAAAAOADoAAAAHACwAAAAOADsAAAAHAC0AAAAOADwAAAAIACsAAAAPADoAAAAIACwAAAAPADsAAAAIAC0AAAAPADwAAAAJACsAAAAQADoAAAAJACwAAAAQADsAAAAJAC0AAAAQADwAAAAKACsAAAARADoAAAAKACwAAAARADsAAAAKAC0AAAARADwAAAALACsAAAASADoAAAALACwAAAASADsAAAALAC0AAAASADwAAAAMACsAAAATADoAAAAMACwAAAATADsAAAAMAC0AAAATADwAAAANACsAAAAUADoAAAANACwAAAAUADsAAAANAC0AAAAUADwAAAAOACsAAAAVADoAAAAOACwAAAAVADsAAAAOAC0AAAAVADwAAAAPACsAAAAWADoAAAAPACwAAAAWADsAAAAPAC0AAAAWADwAAAAQACwAAAAXADsAAAAQAC0AAAAXADwAAAARACsAAAAYADoAAAARACwAAAAYADsAAAARAC0AAAAYADwAAAASACsAAAAZADoAAAASACwAAAAZADsAAAASAC0AAAAZADwAAAATACsAAAAaADoAAAATACwAAAAaADsAAAATAC0AAAAaADwAAAAUACsAAAAbADoAAAAUACwAAAAbADsAAAAUAC0AAAAbADwAAAAVACsAAAAcADoAAAAVACwAAAAcADsAAAAVAC0AAAAcADwAAAAWACsAAAAdADoAAAAWACwAAAAdADsAAAAWAC0AAAAdADwAAAAXACsAAAAeADoAAAAXACwAAAAeADsAAAAXAC0AAAAeADwAAAAYACsAAAAfADoAAAAYACwAAAAfADsAAAAYAC0AAAAfADwAAAAZACsAAAAgADoAAAAZACwAAAAgADsAAAAZAC0AAAAgADwAAAAaACsAAAAhADoAAAAaACwAAAAhADsAAAAaAC0AAAAhADwAAAAbACsAAAAiADoAAAAbACwAAAAiADsAAAAbAC0AAAAiADwAAAAcACsAAAAjADoAAAAcACwAAAAjADsAAAAcAC0AAAAjADwAAAAdACsAAAAkADoAAAAdACwAAAAkADsAAAAdAC0AAAAkADwAAAAeACsAAAAlADoAAAAeACwAAAAlADsAAAAeAC0AAAAlADwAAAAfACsAAAAmADoAAAAfACwAAAAmADsAAAAfAC0AAAAmADwAAAAgACsAAAAnADoAAAAgACwAAAAnADsAAAAgAC0AAAAnADwAAAAhACsAAAAoADoAAAAhACwAAAAoADsAAAAhAC0AAAAoADwAAAAiACsAAAApADoAAAAiACwAAAApADsAAAAiAC0AAAApADwAAAAjACsAAAAGADoAAAAjACwAAAAGADsAAAAjAC0AAAAGADwAAAAkACsAAAAHADoAAAAkACwAAAAHADsAAAAkAC0AAAAHADwAAAAlACsAAAAIADoAAAAlACwAAAAIADsAAAAlAC0AAAAIADwAAAAmACsAAAAJADoAAAAmACwAAAAJADsAAAAmAC0AAAAJADwAAAAnACsAAAAKADoAAAAnACwAAAAKADsAAAAnAC0AAAAKADwAAAAoACsAAAALADoAAAAoACwAAAALADsAAAAoAC0AAAALADwAAAApACsAAAAMADoAAAApACwAAAAMADsAAAApAC0AAAAMADwAAAAqACsAAAANADoAAAAqACwAAAANADsAAAAqAC0AAAANADwAAAArACsAAAAOADoAAAArACwAAAAOADsAAAArAC0AAAAOADwAAAAsACsAAAAPADoAAAAsACwAAAAPADsAAAAsAC0AAAAPADwAAAAtACsAAAAQADoAAAAtACwAAAAQADsAAAAtAC0AAAAQADwAAAAuACsAAAARADoAAAAuACwAAAARADsAAAAuAC0AAAARADwAAAAvACsAAAASADoAAAAvACwAAAASADsAAAAvAC0AAAASADwAAAAwACsAAAATADoAAAAwACwAAAATADsAAAAwAC0AAAATADwAAAAxACsAAAAUADoAAAAxACwAAAAUADsAAAAxAC0AAAAUADwAAAAyACsAAAAVADoAAAAyACwAAAAVADsAAAAyAC0AAAAVADwAAAAzACsAAAAWADoAAAAzACwAAAAWADsAAAAzAC0AAAAWADwAAAA0ACwAAAAXADsAAAA0AC0AAAAXADwAAAA1ACsAAAAYADoAAAA1ACwAAAAYADsAAAA1AC0AAAAYADwAAAA2ACsAAAAZADoAAAA2ACwAAAAZADsAAAA2AC0AAAAZADwAAAA3ACsAAAAaADoAAAA3ACwAAAAaADsAAAA3AC0AAAAaADwAAAA4ACsAAAAbADoAAAA4ACwAAAAbADsAAAA4AC0AAAAbADwAAAA5ACsAAAAcADoAAAA5ACwAAAAcADsAAAA5AC0AAAAcADwAAAA6ACsAAAAdADoAAAA6ACwAAAAdADsAAAA6AC0AAAAdADwAAAA7ACsAAAAeADoAAAA7ACwAAAAeADsAAAA7AC0AAAAeADwAAAA8ACsAAAAfADoAAAA8ACwAAAAfADsAAAA8AC0AAAAfADwAAAA9ACsAAAAgADoAAAA9ACwAAAAgADsAAAA9AC0AAAAgADwAAAA+ACsAAAAhADoAAAA+ACwAAAAhADsAAAA+AC0AAAAhADwAAAA/ACsAAAAiADoAAAA/ACwAAAAiADsAAAA/AC0AAAAiADwAAABAACsAAAAjADoAAABAACwAAAAjADsAAABAAC0AAAAjADwAAABBACsAAAAkADoAAABBACwAAAAkADsAAABBAC0AAAAkADwAAABCACsAAAAlADoAAABCACwAAAAlADsAAABCAC0AAAAlADwAAABDACsAAAAmADoAAABDACwAAAAmADsAAABDAC0AAAAmADwAAABEACsAAAAnADoAAABEACwAAAAnADsAAABEAC0AAAAnADwAAABFACsAAAAoADoAAABFACwAAAAoADsAAABFAC0AAAAoADwAAABGACsAAAApADoAAABGACwAAAApADsAAABGAC0AAAApADwAAABHACsAAAAqADoAAABHACwAAAAqADsAAABHAC0AAAAqADwAAABIACsAAAAGADoAAABIACwAAAAGADsAAABIAC0AAAAGADwAAABJACsAAAAHADoAAABJACwAAAAHADsAAABJAC0AAAAHADwAAABKACsAAAAIADoAAABKACwAAAAIADsAAABKAC0AAAAIADwAAABLACsAAAAJADoAAABLACwAAAAJADsAAABLAC0AAAAJADwAAABMACsAAAAKADoAAABMACwAAAAKADsAAABMAC0AAAAKADwAAABNACsAAAALADoAAABNACwAAAALADsAAABNAC0AAAALADwAAABOACsAAAAMADoAAABOACwAAAAMADsAAABOAC0AAAAMADwAAABPACsAAAANADoAAABPACwAAAANADsAAABPAC0AAAANADwAAABQACsAAAAOADoAAABQACwAAAAOADsAAABQAC0AAAAOADwAAABRACsAAAAPADoAAABRACwAAAAPADsAAABRAC0AAAAPADwAAABSACsAAAAQADoAAABSACwAAAAQADsAAABSAC0AAAAQADwAAABTACsAAAARADoAAABTACwAAAARADsAAABTAC0AAAARADwAAABUACsAAAASADoAAABUACwAAAASADsAAABUAC0AAAASADwAAABVACsAAAATADoAAABVACwAAAATADsAAABVAC0AAAATADwAAABWACsAAAAUADoAAABWACwAAAAUADsAAABWAC0AAAAUADwAAABXACsAAAAVADoAAABXACwAAAAVADsAAABXAC0AAAAVADwAAABYACsAAAAWADoAAABYACwAAAAWADsAAABYAC0AAAAWADwAAABZACwAAAAXADsAAABZAC0AAAAXADwAAABaACsAAAAYADoAAABaACwAAAAYADsAAABaAC0AAAAYADwAAABbACsAAAAZADoAAABbACwAAAAZADsAAABbAC0AAAAZADwAAABcACsAAAAaADoAAABcACwAAAAaADsAAABcAC0AAAAaADwAAABdACsAAAAbADoAAABhACsAAAAfADoAAABjACsAAAAhADoAAABkACsAAAAiADoAAAA=")
 tile_set = SubResource("TileSet_py0bb")
-
-[node name="platforms" type="Node2D" parent="."]
-visible = false
-position = Vector2(43, 664)
-
-[node name="platform3" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(198, -371)
-
-[node name="platform5" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(284, -228)
-
-[node name="platform6" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(491, -325)
-
-[node name="platform7" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(648, -485)
-
-[node name="platform8" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(125, -76)
-
-[node name="platform9" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(482, -89)
-
-[node name="platform10" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(782, -233)
-
-[node name="platform11" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(989, -362)
-
-[node name="platform12" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(1055, -167)
-
-[node name="platform13" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(1260, -301)
-
-[node name="platform14" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(1469, -481)
-
-[node name="platform15" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(1516, -140)
-
-[node name="platform16" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(1788, -83)
-
-[node name="platform17" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(1709, -315)
-
-[node name="platform18" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(1999, -279)
-
-[node name="platform19" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(2103, -81)
-
-[node name="platform20" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(2293, -159)
-
-[node name="platform21" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(2524, -314)
-
-[node name="platform22" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(2507, -63)
-
-[node name="platform23" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(2649, -162)
-
-[node name="platform24" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(2809, -58)
-
-[node name="platform25" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(2778, -330)
-
-[node name="platform26" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(1940, -38)
-
-[node name="platform27" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(1278, -68)
-
-[node name="platform28" parent="platforms" instance=ExtResource("7_6d8g7")]
-position = Vector2(864, -35)
 
 [node name="outlineplatform" parent="." instance=ExtResource("14_d013m")]
 position = Vector2(290, 722)
